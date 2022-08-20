@@ -5,10 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Money Master</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h1 class="text-teal-500 font-medium text-3xl text-center my-5">
+        Money Master💸
+      </h1>
+    </header>
+    <main>
+      <section class="w-10/12 mx-auto grid grid-cols-2 gap-5">
+        <div class="mb-5">
+          <img class="h-min" src="images/Pexels Photo by Karolina Grabowska.png" alt="" />
+        </div>
+        <div class="bg-gray-100 h-fit">
+          <h4 class="text-2xl text-center font-medium mt-4 pb-2">income</h4>
+          <div class="text-center mt-3">
+            <h2 class="inline-block text-xl">income:</h2>
+            <input class="bg-gray-300 p-2 rounded-lg" type="text" />
+          </div>
+          <h4 class="text-2xl text-center font-medium mt-4 pb-2">Expense</h4>
+          <div class="text-center mt-3">
+            <h2 class="inline-block text-xl">Food:</h2>
+            <input class="bg-gray-300 p-2 rounded-lg" type="text" />
+          </div>
+          <div class="text-center mt-3">
+            <h2 class="inline-block text-xl">Rent:</h2>
+            <input class="bg-gray-300 p-2 rounded-lg" type="text" />
+          </div>
+          <div class="text-center mt-3">
+            <h2 class="inline-block text-xl">Clothes:</h2>
+            <input class="bg-gray-300 p-2 rounded-lg" type="text" />
+          </div>
+          <div class="text-center my-3">
+            <button
+              class="text-center text-white bg-blue-400 px-8 py-2 rounded-lg"
+            >
+              Calculate
+            </button>
+          </div>
+          <h4 class="text-2xl text-center font-medium mt-4 pb-2">
+            Total Expense :<span> 5500</span>
+          </h4>
+          <h4 class="text-2xl text-center font-medium mt-4 pb-2">
+            Balance :<span> 5500</span>
+          </h4>
+          <div class="text-center mt-3">
+            <h2 class="inline-block text-xl">Save:</h2>
+            <input class="bg-gray-300 rounded-lg py-2 w-20" type="text" />
+            <p class="inline">&nbsp;%&nbsp;</p>
+            <button
+              class="text-center text-white bg-blue-400 px-8 py-2 rounded-lg"
+            >
+              Save
+            </button>
+            <h4 class="text-xl text-center font-medium mt-4 pb-2">
+              Saving Amount :<span> 5500</span>
+            </h4>
+            <h4 class="text-xl text-center font-medium pb-2">
+              Remaining Balance :<span> 5500</span>
+            </h4>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="js/app.js"></script>
   </body>
 </html>
