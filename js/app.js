@@ -17,4 +17,20 @@ document.getElementById("calculate").addEventListener("click", function () {
   balanceElement.innerText = balance;
 });
 
+document.getElementById("save").addEventListener("click", function () {
+  const income = inputValueToIntegerById("income");
+  const savingPercentNumber = inputValueToIntegerById("saving-percent");
 
+  const divideIncome = income / 100;
+  const savingAmount = savingPercentNumber * divideIncome;
+
+  const savingAmountElement = document.getElementById("saving-amount");
+  savingAmountElement.innerText = savingAmount;
+
+  const balance = textValueToIntegerById("balance");
+  const savingElement = textValueToIntegerById("saving-amount");
+  const remainingBalance = balance - savingElement;
+
+  const remainingBalanceElement = document.getElementById("remaining-balance");
+  remainingBalanceElement.innerText = remainingBalance;
+});
